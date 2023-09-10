@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react'
 import './App.css';
-import { ListCard } from "./components/Listard";
+// import { ListCard } from "./components/Listard";
+import { SplashScreen } from './Screens/SplashScreen'
 
 const fakeList = [
   {
@@ -25,26 +25,9 @@ const fakeList = [
 
 
 function App() {
-  const [loading, setLoading] = useState(true)
-  const [marketList, setMarketList] = useState([]);
-  
-  const loadList = () => {
-    setLoading(true)
-    setTimeout(() => {
-      setMarketList(fakeList)
-      setLoading(false);
-    }, 2000);
-  }
-
-  useEffect(() => {
-  }, [])
   
   return (
-    <div className="App">
-      {loading ? <span> Carregando...</span> : marketList.map((item) => (
-          <ListCard key={`item_${item.id}`} item={item} />
-      ))}
-    </div>
+    <SplashScreen />
   );
 }
 
