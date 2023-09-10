@@ -12,6 +12,9 @@ export const SplashScreen = () => {
                 <h1 className='home-screen-title'>
                     Sua lista de supermercado mais fácil do que nunca!
                 </h1>
+                <h3 className='home-screen-sub-title'>
+                    Ajudamos você a organizar sua lista de compras de forma descomplicada. 
+                </h3>
             </div>
         </div>
     )
